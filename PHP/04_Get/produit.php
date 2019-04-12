@@ -14,10 +14,11 @@
 <body>
     
     <div class="container text-center">
-     <h1 class="display-4 text-center" > Détails du produit n° <strong class="text-danger"><?= $_GET['id']?></strong> </h1><hr>
+     <h1 class="display-4 text-center"> Détails du produit n° <strong class="text-danger"><?= $_GET['id'] ?></strong></h1><hr>
 
     <?php
-        // echo '<pre>' ; print_r($_GET); echo '</pre>';
+    
+        echo '<pre>' ; print_r($_GET); echo '</pre>';
     //Les informations envoyées dans l'URL sont automatiquement stockées dans la superG $_GET , renvoyant un tableau ARRAY 
 
     //Exo : Afficher les données transmit dans l'URL avec un affichage user en exluant l'indice 'id' 

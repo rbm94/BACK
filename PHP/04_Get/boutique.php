@@ -15,17 +15,15 @@
 <body>
     <div class="container text-center">
         <h1 class="display-4 text-center" >Bienvenue dans ma boutique !! </h1>
-            <div class="col-md1 offset-md-2">
-            <img src="../img/nike-nike-nsw-homme-t-shirt-rouge-827021659-x.jpg" alt="">
-            <a href="produit.php?id=1&type=tshirt&couleur=rouge&prix=15">Voir le détail du produit 1</a><br></div>
 
-            <a href="produit.php?id=2&type=chaussette&couleur=noir&prix=5">Voir le détail du produit 2</a><br>
-            
-            <a href="produit.php?id=3&type=short&couleur=bleu&prix=20">Voir le détail du produit 3</a><br>
-            
-            <a href="produit.php?id=4&type=boxer&couleur=rose&prix=10">Voir le détail du produit 4</a><br>
-            
-            <a href="produit.php?id=5&type=sweat&couleur=gris&prix=75">Voir le détail du produit 5</a><br>
-    </div>
+    <div class="col-md-2 offset-md-5 border border-dark">
+         <a href=""><img src="tshirt-rouge.jpg" alt="tshirt-rouge"></a><br>
+
+            <a href="fiche_produit.php?id=1&type=tshirt&couleur=rouge&prix=15">Voir le détail du produit 1</a><br></div>
+            <a href="fiche_produit.php?id=2&type=pantalon&couleur=marron&prix=30">Voir le détail du produit 2</a><br>
+            <a href="fiche_produit.php?id=3&type=sweat&couleur=vert&prix=50">Voir le détail du produit 3</a><br>
+            <a href="fiche_produit.php?id=4&type=chaussette&couleur=noir&prix=8">Voir le détail du produit 4</a><br>
+            <a href="fiche_produit.php?id=5&type=chaussure&couleur=beige&prix=69">Voir le détail du produit 5</a><br>
+</div>
 </body>
 </html>

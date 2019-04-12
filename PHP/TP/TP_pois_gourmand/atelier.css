@@ -1,0 +1,30 @@
+p,h3   
+{
+font-family:'Srisakdi'; 
+font-size: 1.3rem;
+}
+h1
+{
+font-family:'Srisakdi'; 
+font-size: 1.3rem;
+margin-left: 7vw;
+}
+
+#fd{
+    margin-top: 5vh;
+    height: 50vh;
+}
+#fh{
+    height: 49vh;
+    margin-top: 4vh;
+    
+}
+#fn
+{
+ height: 49vh;
+}
+
+#apg
+{
+    margin-top: 5vh;
+}

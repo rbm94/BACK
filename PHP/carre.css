@@ -1,0 +1,21 @@
+.carre{
+    margin: 0 auto;
+    border: 2px black solid;
+    height: 200px;
+    width: 200px;
+    background: teal;
+}
+.carre2{
+    margin: 0 auto;
+    border: 2px black solid;
+    height: 200px;
+    width: 200px;
+    background: lightcoral;
+}
+.carre3{
+    margin: 0 auto;
+    border: 2px black solid;
+    height: 200px;
+    width: 200px;
+    background: lightsalmon;
+}
