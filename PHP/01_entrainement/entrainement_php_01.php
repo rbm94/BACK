@@ -409,7 +409,7 @@ echo '<hr><h2 class="display-4 text-center" > --- Tableau de données ARAY ---  
 //Un tableau ARAY est déclaré un peu comme nune variable améliorée, car on ne concerve pas qu'une valeur mais un ensemble de valeur 
 
 $liste = array("Le B", "Aziz", "Sylvain", "Yanis");
-echo $liste; // ne peut pas afficher un tableau array en passant simplement par echo 
+//echo $liste; // ne peut pas afficher un tableau array en passant simplement par echo 
 
 echo '<pre>' ; var_dump($liste); echo '</pre>';
 echo '<pre>' ; print_r($liste); echo '</pre>';
@@ -543,7 +543,7 @@ echo '<pre>' ; print_r($_SERVER); echo '</pre>';
 
 echo '<hr><h2 class="display-4 text-center" > --- Classe et objet ---  </h2><hr>';
 
-//Un objet est un autre type de données. Un peu à la manière d'un ARRAY , il permet de regrouper des info.
+//Un objet est un autre type de données. Un peu à la manière d'un ARRAY , il permet de regrouper des infos.
 //On peut y déclarer une variable (appelée : attribut ou propriété) mais aussi des fonctions (appelée : method).
 
 //Par convention la premiere lettre du nom de la classe doit toujours être en majuscule .

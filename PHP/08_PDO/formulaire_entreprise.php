@@ -92,7 +92,7 @@
     <div class="form-group col-md-6">
       <label for="inputdate" class="text text-info">date d'embauche</label>
       <input type="date" class="form-control" id="date" name="date_embauche" placeholder="date">
-    </div><!-- Prénom -->
+    </div><!-- Date -->
 
 
 

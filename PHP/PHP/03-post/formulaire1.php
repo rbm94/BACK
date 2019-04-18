@@ -37,7 +37,6 @@
         echo "Mot de passe  : " . $_POST['mdp'] . "<br>";
     }
    
-
     echo '<hr>';
 
     ?>

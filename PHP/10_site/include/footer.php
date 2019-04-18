@@ -1,7 +1,7 @@
 </section>
 ​
   <tr></tr><footer class="bg-dark text-white text-center p-2 fixed-bottom">
-    &copy; 2019 - GL - Pas touche c'est mon site à moi
+    &copy; 2019 - GLP - A tous les frérots incarséré GLP -
     </footer>
     
 ​

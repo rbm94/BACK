@@ -16,18 +16,18 @@
 <h1 class="display-4 text-center text text-danger">Formulaire 3</h1>
 <form class="col-md-4 offset-md-4" method="POST" action="./formulaire4.php">    
 <div class="form-row">
-    <div class="form-group col-md-12">
+    <div class="form-check form-check-inline">>
       <label for="inputPseudo">Pseudo</label>
-      <input type="text" class="form-control" id="Pseudo" placeholder="Pseudo" name="pseudo">
+      <input type="text" class="form-control" id="pseudo" placeholder="pseudo" name="pseudo">
     </div><!-- Pseudo -->
 
- <div class="form-group col-md-12 ">
+ <div class="form-check form-check-inline">>
     <label for="exampleInputEmail1">Email address</label>
     <input type="text" class="form-control" id="email" name="email" placeholder="Enter email">
     <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
   </div><!-- Email -->  
 
-<button class="col-md-12 btn btn-danger"  type="submit" >submit</button>
+<button class="col-md-6 offset-md-4 btn btn-danger"  type="submit" >submit</button>
 </form>
 </body>
 </html>

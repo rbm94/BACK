@@ -10,7 +10,7 @@
     <title>Formulaire 4</title>
 
 
-<h1 class="display-4 text-center">Formulaire 4</h1><hr>
+<h1 class="display-4 text-center">Formulaire 3 secondes page</h1><hr>
     <?php
 
         // echo '<pre>'; print_r($_POST); echo '</pre>';
@@ -25,7 +25,7 @@
         // fopen() / fwrite () / fclose ()
     $fichier = fopen("liste.txt", "a");// permet d'ouvrir ou créer un fichier texte . 
 
-        fwrite($fichier, $_POST['pseudo']. ' - '. $_POST['email'] . "\r\n");//permet d'ecrire dans le fichier texte ? et "\r\n" permet de revenir a la ligne . 
+        fwrite($fichier, $_POST['pseudo'] . ' - ' . $_POST['email'] . "\r\n");//permet d'ecrire dans le fichier texte ? et "\r\n" permet de revenir a la ligne . 
 
 
         fclose($fichier); // Permet de femrer un fichier 

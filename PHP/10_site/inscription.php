@@ -2,14 +2,21 @@
 require_once("include/init.php");
 // <!--2.-->
         
-    echo '<pre>'; print_r($_POST); echo'</pre>';
+    // echo '<pre>'; print_r($_POST); echo'</pre>';
     // <!--3.-->
 
 extract($_POST);
 
+if(clientConnecte())
+{
+    header("Location: profil.php");
+}
 
 if($_POST)
 {
+
+  
+
     extract($_POST);
     $verif = $bdd->prepare("SELECT * FROM membre WHERE pseudo = :pseudo");
     $verif->bindValue(':pseudo', $pseudo, PDO::PARAM_STR);
@@ -32,6 +39,8 @@ if($_POST)
 
     if(!$error)
     {
+        $_POST['mdp'] = password_hash($_POST['mdp'], PASSWORD_DEFAULT);//ne pas afficher les mdp dans la bdd, password_hash permet de créer une clé de hachage
+
         $data_insert = $bdd->prepare("INSERT INTO membre (pseudo, mdp, nom, prenom, email, civilite, ville, code_postal, adresse) VALUES (:pseudo, :mdp, :nom, :prenom, :email, :civilite, :ville, :code_postal, :adresse)");
         foreach($_POST as $key => $value)
         {
