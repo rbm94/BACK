@@ -34,7 +34,7 @@
 
         echo '<div class="col-md-6 offset-md-3 alert alert-success text-center">L\'employé <strong>' . $_POST['nom'] . '</strong> a bien été enregistré !!</div>';
     }
-    
+        
     ?>
 
     <form class="col-md-4 offset-md-4 text-center" method="post" action="">

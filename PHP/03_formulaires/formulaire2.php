@@ -58,6 +58,22 @@ if(empty($error)){
     echo '<div class="col-md-4 offset-md-4 alert alert-success text-center text-dark"> Vous avez bien remplis le formulaire </div>';
 }
 }
+
+// OUVERTURE  NVX IF($_POST)
+$pdo = new PDO('mysql:host=localhost;dbname=entreprise=', 'root', '', array(PDO::ATTR_ERRMODE => PDO::ERRMODE_WARNING, PDO::MYSQL_ATTR_INIT_COMMAND =>'SET NAMES utf8' ));
+
+    if($_POST)
+        {
+            echo '<pre>' ; print_r($_POST); echo '</pre>';
+            $req = "INSERT INTO employes (prenom, nom, sexe, service, date_embauche, salaire) VALUES ('$_POST[prenom]', '$_POST[nom]','$_POST[sexe]', '$_POST[service]', '$_POST[date_embauche]', '$_POST[salaire]')";
+
+            $resultat = $pdo->exec($req);//on utilise la superglobale $_POST pour aller crochter chaque champs du formulaire afin de récuperer les données.
+
+            echo $req;
+        
+            echo '<div class="col-md-6 offset-md-3 alert alert-info text-center">L\'employé <strong>' .$_POST['nom'] .'</strong> a bien été enregistré !!</div>';
+
+
 ?>
 
 </head>

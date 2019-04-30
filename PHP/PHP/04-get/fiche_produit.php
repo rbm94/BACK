@@ -14,8 +14,8 @@
         <h1 class="display-4 text-center">Détail du produit n° <strong class="text-info"><?= $_GET['id'] ?></strong></h1><hr>
         
         <?php 
-        echo '<pre>'; print_r($_GET); echo'</pre>'; 
-        // Le sinformations envoyés dans l'URL sont automatiquement stockées dans la superglobale $_GET, cela retourne un tableau ARRAY associatif
+        // echo '<pre>'; print_r($_GET); echo'</pre>'; 
+        // Les informations envoyés dans l'URL sont automatiquement stockées dans la superglobale $_GET, cela retourne un tableau ARRAY associatif
 
         // Exo : afficher les données transmit dans l'URL avec un affichage conventionnel en excluant l'indice 'id'
         echo '<div class="col-md-4 offset-md-4 mx-auto text-center alert alert-info">';

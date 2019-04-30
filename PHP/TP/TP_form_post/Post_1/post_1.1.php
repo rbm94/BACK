@@ -131,7 +131,7 @@ echo $error;
 
 
 
-<button class="col-md-6 mx-auto0 btn btn-secondary" type="submit">Submit</button>
+<button class="col-md-6 offset-md-12 btn btn-secondary" type="submit">Submit</button>
 </form>
 </body>
 </html>

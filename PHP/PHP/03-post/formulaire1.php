@@ -17,6 +17,10 @@
     echo '<pre>'; print_r($_POST); echo '</pre>'; // permet d'observer les données saisie dans le formulaire qui vont se stocker directement dans la superglobale $_POST, les indices correspondent aux attributs 'name' du formulaire HTML
 
     // Exo : afficher les données saisie  dans le formulaire en passant par la superglobale $_POST avec un affichage conventionnelle (sans print_r ou var_dump)
+    foreach (array_keys($_POST) as $b) {
+       $test = filter_input(INPUT_POST, $b);
+       echo '<pre>'; print_r($test); echo '</pre>';
+    }
 
     // on parcours la superglobale $_POST de type ARRAY avec une boucle foreach
     foreach($_POST as $key => $value)
@@ -37,6 +41,7 @@
         echo "Mot de passe  : " . $_POST['mdp'] . "<br>";
     }
    
+
     echo '<hr>';
 
     ?>

@@ -18,7 +18,7 @@
             echo '<pre>' ; print_r($_POST); echo '</pre>';
             $req = "INSERT INTO employes (prenom, nom, sexe, service, date_embauche, salaire) VALUES ('$_POST[prenom]', '$_POST[nom]','$_POST[sexe]', '$_POST[service]', '$_POST[date_embauche]', '$_POST[salaire]')";
 
-            $resultat = $pdo->exec($req);//on utilise la superglobale $_POST pour aller crochetr chaque champs du formulaire afin de récuperer les données.
+            $resultat = $pdo->exec($req);//on utilise la superglobale $_POST pour aller crochter chaque champs du formulaire afin de récuperer les données.
 
             echo $req;
         

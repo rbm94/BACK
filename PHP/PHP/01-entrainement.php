@@ -664,6 +664,8 @@
         */
         echo '<pre>'; print_r($_SERVER); echo '</pre>'; 
 
+        
+
         echo '<hr><h2 class="display-4 text-center">Classe et objet</h2><hr>';
         // Un objet est un autre type de données. Un peu à la manière d'un ARRAY , il permet de regrouper des informations.
         // Cependant , cela va beaucoup plus loin car on peux y déclarer des variables (appelée : attribut ou propriété) mais aussi  des fonctions (appelée : méthodes).
