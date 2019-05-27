@@ -25,10 +25,10 @@
         // fopen() / fwrite () / fclose ()
     $fichier = fopen("liste.txt", "a");// permet d'ouvrir ou créer un fichier texte . 
 
-        fwrite($fichier, $_POST['pseudo'] . ' - ' . $_POST['email'] . "\r\n");//permet d'ecrire dans le fichier texte ? et "\r\n" permet de revenir a la ligne . 
+        fwrite($fichier, $_POST['pseudo'] . ' - ' . $_POST['email'] . "\r\n");
+        //permet d'ecrire dans le fichier texte ? et "\r\n" permet de revenir a la ligne . 
 
 
         fclose($fichier); // Permet de femrer un fichier 
 ?>
 </head>
-<body>
