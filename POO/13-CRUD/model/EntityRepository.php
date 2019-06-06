@@ -51,6 +51,8 @@ class EntityRepository
        return array_splice($r, 1); // permet de retirer le premier champs idEmploye dans le formulaire grace à la méthode array_splice()
    }
 
+  
+
    public function save()
    {
        $id = isset($_GET['id']) ? $_GET['id'] : 'NULL';

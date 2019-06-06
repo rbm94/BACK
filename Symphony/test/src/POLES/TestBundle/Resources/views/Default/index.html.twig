@@ -1,0 +1,9 @@
+{% for message in app.session.flashbag.get('success')%}
+ {{ message }} <br/> {# '{{' signifie echo en twig #}
+{% endfor %}
+
+{% for message in app.session.flashbag.get('error')%}
+ {{ message }} <br/> 
+{% endfor %}
+
+Hello World!

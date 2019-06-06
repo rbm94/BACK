@@ -11,7 +11,7 @@ class Controller
     }
     public function handlerRequest()
     {
-        $op = isset($_GET['op']) ? $_GET['op'] : NULL; // si 'op' est défjint dans l'URL, on le stock dans une variable sinon on stock 'NULL'
+        $op = isset($_GET['op']) ? $_GET['op'] : NULL; // si 'op' est définit dans l'URL, on le stock dans une variable sinon on stock 'NULL'
 
         try
         {
@@ -24,6 +24,22 @@ class Controller
         {
             die("Problème dans l'action de l'internaute !!!");
         }
+    }
+
+    public function delete()
+    {
+        $id = isset($_GET['id']) ? $_GET['id'] : NULL; // on contrôle qu'un id a bien été passé dans l'URL et on le stock
+        $r = $this->db->delete($id); // on fait appel à la méthode delete() du fichier EntityRepository.php
+        $this->redirect('index.php'); // après la suppression, on redirige vers la page index.php
+    }
+
+    public function select()
+    {
+        $id = isset($_GET['id']) ? $_GET['id'] : NULL ; 
+    $this->render('layout.php','details.php', array(
+        "title" => "Détails de l'meployé ID : $id" ,
+        "données" => $this->db->select($id)
+    ));
     }
 
     public function selectAll()

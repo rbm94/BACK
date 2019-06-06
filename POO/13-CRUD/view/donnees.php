@@ -20,10 +20,10 @@
 <?php foreach($donnees as $value): ?>
     <tr>
         <td><?= implode('</td><td>', $value) ?></td>
-        <td><a href="?op=select&id=<?= $value[$id] ?>" class="text-dark"><i class="fas fa-eye"></i></a></td>
-        <td><a href="?op=update&id=<?= $value[$id] ?>" class="text-dark"><i class="fas fa-wrench"></i></a></td>
-        <td><a href="?op=delete&id=<?= $value[$id] ?>" class="text-dark"><i class="fas fa-trash-alt"></i></a></td>
+        <td><a href="?op=conducteur&id=<?= $value[$id] ?>" class="text-dark"><i class="fas fa-eye"></i></a></td>
+        <td><a href="?op=Vehicule&id=<?= $value[$id] ?>" class="text-dark"><i class="fas fa-wrench"></i></a></td>
+        <td><a href="?op=Association&id=<?= $value[$id] ?>" class="text-dark"><i class="fas fa-trash-alt"></i></a></td>
     </tr>
 <?php endforeach; ?>
 </tbody>
-</table>
+</table>    

@@ -236,11 +236,6 @@ $produits = $result->fetchAll(PDO::FETCH_ASSOC);
       </select>
     </div>
 
-<!-- Photo -->
-        <div class="form-group col-md-6 mx-auto">
-            <label for="exampleFormControlFile1">Photo</label>
-            <input type="file" class="form-control-file" id="photo" name="photo">
-        </div>
         <?php if(!empty($photo)): ?>
         <em>Vous pouvez uploader une nouvelle photo</em><br>
         <img src="<?= $photo?>" alt="<?= $titre?>" >
